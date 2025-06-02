@@ -5,7 +5,7 @@ import seaborn as sns
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("cleaned_dataset.csv").iloc[:,1:]
+    df = pd.read_csv("app/cleaned_dataset.csv").iloc[:,1:]
     return df
 
 df = load_data()
